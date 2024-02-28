@@ -1,59 +1,58 @@
-## Introduction
+DOM (Document Object Model) functions are a set of tools used to manipulate the content, style and structure of web documents dynamically using JavaScript.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+These methods enable developers to manipulate a document while the code is running. 
 
-### What you will make
+Here are some examples you may have used in your projects:
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
++ querySelector(selector): Returns the first element that matches the specified CSS selector.
+    var element = document.querySelector(".myClass");
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
+language: js
+filename: script.js
+line_numbers: true
 ---
-### Hardware
+     // Update Copyright Year function 
+     const currentYear = new Date();
+     document.querySelector("#currentYear")
+    
+--- /code ---
 
-+ A computer or tablet capable of running Scratch 3
+In this example, the HTML element contains an attribute `id=currentYear"` therefore this was passed through the function to find it.
 
-### Software
++ querySelectorAll(selector): Returns a list of all elements that match the specified CSS selector.
+    var elements = document.querySelectorAll("p.myClass");
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will learn
+language: js
+filename: script.js
+line_numbers: true
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+// Place Hero slider variables here 
+let currentHeroIndex = 0;
+const heroSlides = document.querySelectorAll('.hero-slide');
+  
+--- /code ---
 
---- /collapse ---
+In this example, multiple HTML elements contained the same attribute `class="hero-slide"`. Therefore this selector was passed through the function to find all the HTML elements.
 
---- collapse ---
----
-title: Additional information for educators
----
+Here are some other DOM functions you may come across:
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
++ getElementById(id): retrieves an element by its id attribute.
+    var element = document.getElementById("myElement");
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
++ getElementsByClassName(className): Returns a collection of elements with the given class name.
+    var elements = document.getElementsByClassName("myClass");
 
---- /collapse ---
++ getElementsByTagName(tagName): Returns a collection of elements with the given tag name.
+    var paragraphs = document.getElementsByTagName("p");
+
++ addEventListener(event, callback): Attaches an event listener to an element.
+    element.addEventListener("click", function() {
+        console.log("Element clicked!");
+    });
+
+   
