@@ -1,58 +1,51 @@
 DOM (Document Object Model) functions are a set of tools used to manipulate the content, style and structure of web documents dynamically using JavaScript.
 
-These methods enable developers to manipulate a document while the code is running. 
-
 Here are some examples you may have used in your projects:
 
-+ querySelector(selector): Returns the first element that matches the specified CSS selector.
-    var element = document.querySelector(".myClass");
-
++ `querySelector(selector)`: Returns the first element that matches the specified CSS selector.
+    
 --- code ---
 ---
 language: js
-filename: script.js
-line_numbers: true
+filename: 
+line_numbers:
 ---
      // Update Copyright Year function 
-     const currentYear = new Date();
-     document.querySelector("#currentYear")
+     const currentYear = new Date().getFullYear();
+     document.querySelector("#copyrightYear").innerText = currentYear
     
 --- /code ---
 
-In this example, the HTML element contains an attribute `id=currentYear"` therefore this was passed through the function to find it.
+In this example, an HTML element uses an attribute `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed.)
 
-+ querySelectorAll(selector): Returns a list of all elements that match the specified CSS selector.
-    var elements = document.querySelectorAll("p.myClass");
++ `querySelectorAll(selector)`: Returns a list of all elements that match the specified CSS selector.
 
 --- code ---
 ---
 language: js
-filename: script.js
-line_numbers: true
+filename: 
+line_numbers:
 ---
 
-// Place Hero slider variables here 
-let currentHeroIndex = 0;
+// Change Hero function
 const heroSlides = document.querySelectorAll('.hero-slide');
+var currentHeroIndex = 0;
+
+function changeHero(direction) {
+
+  heroSlides[currentHeroIndex].classList.remove("active");
+  currentHeroIndex = currentHeroIndex + direction;
+
+  if (currentHeroIndex < 0){
+    currentHeroIndex = 2;
+  } else if (currentHeroIndex > 2) {
+    currentHeroIndex = 0;
+  }
+
+  heroSlides[currentHeroIndex].classList.add("active");
+
+}
   
 --- /code ---
 
-In this example, multiple HTML elements contained the same attribute `class="hero-slide"`. Therefore this selector was passed through the function to find all the HTML elements.
-
-Here are some other DOM functions you may come across:
-
-+ getElementById(id): retrieves an element by its id attribute.
-    var element = document.getElementById("myElement");
-
-+ getElementsByClassName(className): Returns a collection of elements with the given class name.
-    var elements = document.getElementsByClassName("myClass");
-
-+ getElementsByTagName(tagName): Returns a collection of elements with the given tag name.
-    var paragraphs = document.getElementsByTagName("p");
-
-+ addEventListener(event, callback): Attaches an event listener to an element.
-    element.addEventListener("click", function() {
-        console.log("Element clicked!");
-    });
-
-   
+In this example, multiple HTML elements contained the same attribute `class="hero-slide"` and a list of these is returned by the function. The list is then used in the code.
