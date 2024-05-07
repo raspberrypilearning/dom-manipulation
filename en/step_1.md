@@ -1,4 +1,4 @@
-DOM (Document Object Model) functions are a set of tools used to manipulate the content, style and structure of web documents dynamically using JavaScript.
+DOM (document object model) functions are a set of tools used to manipulate the content, style, and structure of web documents dynamically using JavaScript.
 
 Here are some examples you may have used in your projects:
 
@@ -16,7 +16,7 @@ line_numbers:
     
 --- /code ---
 
-In this example, an HTML element uses an attribute `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed.)
+In this example, an HTML element uses an attribute `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed).
 
 + `querySelectorAll(selector)`: Returns a list of all elements that match the specified CSS selector.
 
@@ -48,4 +48,4 @@ function changeHero(direction) {
   
 --- /code ---
 
-In this example, multiple HTML elements contained the same attribute `class="hero-slide"` and a list of these is returned by the function. The list is then used in the code.
+In this example, multiple HTML elements contain the same attribute `class="hero-slide"` and a list of these is returned by the function. The list is then used in the code.
