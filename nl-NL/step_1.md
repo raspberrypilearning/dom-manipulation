@@ -1,8 +1,8 @@
-DOM (Document Object Model) functions are a set of tools used to manipulate the content, style and structure of web documents dynamically using JavaScript.
+DOM (document object model) functions are a set of tools used to manipulate the content, style, and structure of web documents dynamically using JavaScript.
 
-Here are some examples you may have used in your projects:
+Hier zijn enkele voorbeelden die je misschien al eerder hebt gebruikt in je projecten:
 
-- `querySelector(selector)`: Returns the first element that matches the specified CSS selector.
+- `querySelector(selector)`: Retourneert het eerste element dat overeenkomt met de opgegeven CSS selector.
 
 ## --- code ---
 
@@ -12,16 +12,16 @@ line_numbers:
 --------------------------------------------------
 
 ```
- // Update Copyright Year function 
+ // Bijwerken Copyright Jaar functie 
  const currentYear = new Date().getFullYear();
  document.querySelector("#copyrightYear").innerText = currentYear
 ```
 
 \--- /code ---
 
-In this example, an HTML element uses an attribute `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed.)
+In dit voorbeeld gebruikt een HTML-element een kenmerk `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed).
 
-- `querySelectorAll(selector)`: Returns a list of all elements that match the specified CSS selector.
+- `querySelectorAll(selector)`: Retourneert een lijst met alle elementen die overeenkomen met de opgegeven CSS-selector.
 
 ## --- code ---
 
@@ -30,7 +30,7 @@ filename:
 line_numbers:
 --------------------------------------------------
 
-// Change Hero function
+// Wijzig Hero functie
 const heroSlides = document.querySelectorAll('.hero-slide');
 var currentHeroIndex = 0;
 
@@ -51,4 +51,4 @@ heroSlides[currentHeroIndex].classList.add("active");
 
 \--- /code ---
 
-In this example, multiple HTML elements contained the same attribute `class="hero-slide"` and a list of these is returned by the function. The list is then used in the code.
+In this example, multiple HTML elements contain the same attribute `class="hero-slide"` and a list of these is returned by the function. De lijst wordt vervolgens in de code gebruikt.
