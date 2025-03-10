@@ -16,7 +16,7 @@ line_numbers:
     
 --- /code ---
 
-In this example, an HTML element uses an attribute `id=copyrightYear"`. The element with this selector is then altered (its innerText property is changed).
+In this example, an HTML element uses an attribute `id="copyrightYear"`. The element with this selector is then altered (its innerText property is changed).
 
 + `querySelectorAll(selector)`: Returns a list of all elements that match the specified CSS selector.
 
