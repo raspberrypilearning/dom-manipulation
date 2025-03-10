@@ -19,7 +19,7 @@ line_numbers:
 
 \--- /code ---
 
-In dit voorbeeld gebruikt een HTML-element een kenmerk `id=copyrightYear"`. Het element met deze selector wordt vervolgens gewijzigd (de eigenschap innerText wordt gewijzigd).
+In this example, an HTML element uses an attribute `id="copyrightYear"`. Het element met deze selector wordt vervolgens gewijzigd (de eigenschap innerText wordt gewijzigd).
 
 - `querySelectorAll(selector)`: Retourneert een lijst met alle elementen die overeenkomen met de opgegeven CSS-selector.
 
