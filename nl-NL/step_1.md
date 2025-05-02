@@ -1,4 +1,4 @@
-DOM-functies (document object model) zijn een reeks hulpmiddelen waarmee je de inhoud, stijl en structuur van webdocumenten dynamisch kunt manipuleren met behulp van JavaScript.
+DOM (document object model) -functies zijn een reeks hulpmiddelen waarmee je de inhoud, stijl en structuur van webdocumenten dynamisch kunt manipuleren met behulp van JavaScript.
 
 Hier zijn enkele voorbeelden die je misschien al eerder hebt gebruikt in je projecten:
 
