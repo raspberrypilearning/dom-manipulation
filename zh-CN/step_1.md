@@ -1,8 +1,8 @@
-DOM (document object model) functions are a set of tools used to manipulate the content, style, and structure of web documents dynamically using JavaScript.
+DOM（文档对象模型）函数是一组使用 JavaScript 动态操作 Web 文档的内容、样式和结构的工具。
 
-Here are some examples you may have used in your projects:
+以下是你可能在项目中使用过的一些示例：
 
-- `querySelector(selector)`: Returns the first element that matches the specified CSS selector.
+- `querySelector(selector)`：返回与指定 CSS 选择器匹配的第一个元素。
 
 ## --- code ---
 
@@ -12,16 +12,16 @@ line_numbers:
 --------------------------------------------------
 
 ```
- // Update Copyright Year function 
+ // 更新版权年份函数 
  const currentYear = new Date().getFullYear();
  document.querySelector("#copyrightYear").innerText = currentYear
 ```
 
 \--- /code ---
 
-In this example, an HTML element uses an attribute `id="copyrightYear"`. The element with this selector is then altered (its innerText property is changed).
+在此示例中，HTML 元素使用属性 `id="copyrightYear"`。 然后，具有此选择器的元素将被改变（其 innerText 属性将被更改）。
 
-- `querySelectorAll(selector)`: Returns a list of all elements that match the specified CSS selector.
+- `querySelectorAll(selector)`：返回与指定 CSS 选择器匹配的所有元素的列表。
 
 ## --- code ---
 
@@ -30,7 +30,7 @@ filename:
 line_numbers:
 --------------------------------------------------
 
-// Change Hero function
+// 更改 Hero 函数
 const heroSlides = document.querySelectorAll('.hero-slide');
 var currentHeroIndex = 0;
 
@@ -51,4 +51,4 @@ heroSlides[currentHeroIndex].classList.add("active");
 
 \--- /code ---
 
-In this example, multiple HTML elements contain the same attribute `class="hero-slide"` and a list of these is returned by the function. The list is then used in the code.
+在这个例子中，多个 HTML 元素包含相同的属性 `class="hero-slide"`，并且该函数返回这些元素的列表。 然后在代码中使用该列表。
